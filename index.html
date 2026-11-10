@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria large_imgs_test</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #24292f;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #d0d7de;
+        }
+        @media (min-width: 768px) {
+            .galeria img {
+                max-width: 45%; /* Mostra duas imagens por linha em telas maiores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagens</h1>
+    <div class="galeria">
+        <img src="arquivo_0.jpg" alt="Imagem 0">
+        <img src="arquivo_1.jpg" alt="Imagem 1">
+        <img src="arquivo_2.jpg" alt="Imagem 2">
+        <img src="arquivo_3.jpg" alt="Imagem 3">
+        <img src="arquivo_4.jpg" alt="Imagem 4">
+        <img src="arquivo_5.jpg" alt="Imagem 5">
+        <img src="arquivo_6.jpg" alt="Imagem 6">
+        <img src="arquivo_7.jpg" alt="Imagem 7">
+        <img src="arquivo_8.jpg" alt="Imagem 8">
+        <img src="arquivo_9.jpg" alt="Imagem 9">
+    </div>
+</body>
+</html>
